@@ -1,46 +1,28 @@
 -------------------------------------------------------------------------------
 Test set: com.dhvanan.StringCalculatorTest
 -------------------------------------------------------------------------------
-Tests run: 10, Failures: 2, Errors: 6, Skipped: 0, Time elapsed: 0.063 s <<< FAILURE! - in com.dhvanan.StringCalculatorTest
-add_MultipleDelimitersOfAnyLenghtAreSupplied_AllOfTheSuppliedDelimitersShouldBeConsidered  Time elapsed: 0.035 s  <<< ERROR!
-java.lang.NumberFormatException: 
-For input string: "//[**][%%]
-1**2%%3"
-	at com.dhvanan.StringCalculatorTest.add_MultipleDelimitersOfAnyLenghtAreSupplied_AllOfTheSuppliedDelimitersShouldBeConsidered(StringCalculatorTest.java:83)
+Tests run: 10, Failures: 2, Errors: 4, Skipped: 0, Time elapsed: 0.057 s <<< FAILURE! - in com.dhvanan.StringCalculatorTest
+add_MultipleDelimitersOfAnyLenghtAreSupplied_AllOfTheSuppliedDelimitersShouldBeConsidered  Time elapsed: 0.029 s  <<< ERROR!
+java.lang.NumberFormatException: For input string: "1**2%%3"
+	at com.dhvanan.StringCalculatorTest.add_MultipleDelimitersOfAnyLenghtAreSupplied_AllOfTheSuppliedDelimitersShouldBeConsidered(StringCalculatorTest.java:72)
 
-add_NumberBiggerThan1000IsAdded_NumberBiggerThan1000ShouldBeIgnored  Time elapsed: 0.006 s  <<< FAILURE!
+add_NumberBiggerThan1000IsAdded_NumberBiggerThan1000ShouldBeIgnored  Time elapsed: 0.007 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <3> but was: <1006>
-	at com.dhvanan.StringCalculatorTest.add_NumberBiggerThan1000IsAdded_NumberBiggerThan1000ShouldBeIgnored(StringCalculatorTest.java:63)
+	at com.dhvanan.StringCalculatorTest.add_NumberBiggerThan1000IsAdded_NumberBiggerThan1000ShouldBeIgnored(StringCalculatorTest.java:55)
 
-add_MultipleDelimitersAreSupplied_AllOfTheSuppliedDelimitersShouldBeConsidered  Time elapsed: 0.002 s  <<< ERROR!
-java.lang.NumberFormatException: 
-For input string: "//[*][%]
-1*2%3"
-	at com.dhvanan.StringCalculatorTest.add_MultipleDelimitersAreSupplied_AllOfTheSuppliedDelimitersShouldBeConsidered(StringCalculatorTest.java:76)
+add_MultipleDelimitersAreSupplied_AllOfTheSuppliedDelimitersShouldBeConsidered  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.NumberFormatException: For input string: "1*2%3"
+	at com.dhvanan.StringCalculatorTest.add_MultipleDelimitersAreSupplied_AllOfTheSuppliedDelimitersShouldBeConsidered(StringCalculatorTest.java:66)
 
-add_CustomOptionalDelimiterSuppliedAtTheStartOfTheString_WorkAsDelimiterIfSupplied  Time elapsed: 0.002 s  <<< ERROR!
-java.lang.NumberFormatException: 
-For input string: "//;
-1;2"
-	at com.dhvanan.StringCalculatorTest.add_CustomOptionalDelimiterSuppliedAtTheStartOfTheString_WorkAsDelimiterIfSupplied(StringCalculatorTest.java:42)
-
-add_DelimitersOfAnyLength_ShouldCalculateBasedOnTheDelimiters  Time elapsed: 0.001 s  <<< ERROR!
-java.lang.NumberFormatException: 
-For input string: "//[***]
-1***2***3"
-	at com.dhvanan.StringCalculatorTest.add_DelimitersOfAnyLength_ShouldCalculateBasedOnTheDelimiters(StringCalculatorTest.java:69)
+add_DelimitersOfAnyLength_ShouldCalculateBasedOnTheDelimiters  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.NumberFormatException: For input string: ""
+	at com.dhvanan.StringCalculatorTest.add_DelimitersOfAnyLength_ShouldCalculateBasedOnTheDelimiters(StringCalculatorTest.java:60)
 
 add_EmptyString_ShouldReturnZero  Time elapsed: 0.001 s  <<< ERROR!
 java.lang.NumberFormatException: For input string: ""
-	at com.dhvanan.StringCalculatorTest.add_EmptyString_ShouldReturnZero(StringCalculatorTest.java:15)
+	at com.dhvanan.StringCalculatorTest.add_EmptyString_ShouldReturnZero(StringCalculatorTest.java:14)
 
-add_NewLineBetweenNumbers_ConsiderNewLineAsAnotherDelimiter  Time elapsed: 0.001 s  <<< ERROR!
-java.lang.NumberFormatException: 
-For input string: "1
-2"
-	at com.dhvanan.StringCalculatorTest.add_NewLineBetweenNumbers_ConsiderNewLineAsAnotherDelimiter(StringCalculatorTest.java:35)
-
-add_NegativeNumbers_ShouldThrowAndException  Time elapsed: 0.003 s  <<< FAILURE!
+add_NegativeNumbers_ShouldThrowAndException  Time elapsed: 0.002 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: Expected java.lang.IllegalArgumentException to be thrown, but nothing was thrown.
-	at com.dhvanan.StringCalculatorTest.add_NegativeNumbers_ShouldThrowAndException(StringCalculatorTest.java:50)
+	at com.dhvanan.StringCalculatorTest.add_NegativeNumbers_ShouldThrowAndException(StringCalculatorTest.java:44)
 

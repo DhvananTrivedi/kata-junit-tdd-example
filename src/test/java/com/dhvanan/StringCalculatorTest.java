@@ -11,37 +11,31 @@ public class StringCalculatorTest {
 	
     @Test
     public void add_EmptyString_ShouldReturnZero() {
-    	final StringCalculator calculator = new StringCalculator();
-    	Assertions.assertEquals(0, calculator.add(""));
+    	Assertions.assertEquals(0, StringCalculator.add(""));
     }
     
     @Test
     public void add_2SimpleNumbers_CalculatedResult() {
-    	final StringCalculator calculator = new StringCalculator();
-    	Assertions.assertEquals(3, calculator.add("1,2"));
+    	Assertions.assertEquals(3, StringCalculator.add("1,2"));
     }
     
     @Test
     public void add_RandomAmountOfNumbers_CalculatedResults() {
-    	final StringCalculator calculator = new StringCalculator();
-    	Assertions.assertEquals(6, calculator.add("1,2,3"));
-    	Assertions.assertEquals(25, calculator.add("1,2,3,4,5,10"));
-    	Assertions.assertEquals(51, calculator.add("1,2,3,4,5,10,11,15"));
+    	Assertions.assertEquals(6, StringCalculator.add("1,2,3"));
+    	Assertions.assertEquals(25, StringCalculator.add("1,2,3,4,5,10"));
+    	Assertions.assertEquals(51, StringCalculator.add("1,2,3,4,5,10,11,15"));
     }
     
     @Test
     public void add_NewLineBetweenNumbers_ConsiderNewLineAsAnotherDelimiter() {
-    	final StringCalculator calculator = new StringCalculator();
-    	Assertions.assertEquals(6, calculator.add("1\n2,3"));
+    	Assertions.assertEquals(6, StringCalculator.add("1\n2,3"));
     }
     
     
     @Test
     public void add_CustomOptionalDelimiterSuppliedAtTheStartOfTheString_WorkAsDelimiterIfSupplied() {
-    	final StringCalculator calculator = new StringCalculator();
-    	Assertions.assertEquals(3, calculator.add("//;\n1;2"));
-    	Assertions.assertEquals(6, calculator.add("|\n2|4"));
-    	Assertions.assertEquals(3, calculator.add("1,2"));
+    	Assertions.assertEquals(3, StringCalculator.add("//;\n1;2"));
+    	Assertions.assertEquals(3, StringCalculator.add("1,2"));
     }
     
     @Test
@@ -49,8 +43,7 @@ public class StringCalculatorTest {
     	
     	final Throwable exception = Assertions.assertThrows(
                 IllegalArgumentException.class, () -> {
-                	final StringCalculator calculator = new StringCalculator();
-                	calculator.add("-1,2");
+                	StringCalculator.add("-1,2");
                 }
         );
      
@@ -59,28 +52,24 @@ public class StringCalculatorTest {
     
     @Test
     public void add_NumberBiggerThan1000IsAdded_NumberBiggerThan1000ShouldBeIgnored() {
-    	final StringCalculator calculator = new StringCalculator();
-    	Assertions.assertEquals(3, calculator.add("1,2,1003"));
+    	Assertions.assertEquals(3, StringCalculator.add("1,2,1003"));
     }
     
     @Test
     public void add_DelimitersOfAnyLength_ShouldCalculateBasedOnTheDelimiters() {
-    	final StringCalculator calculator = new StringCalculator();
-    	Assertions.assertEquals(6, calculator.add("//[***]\n1***2***3"));
-    	Assertions.assertEquals(10, calculator.add("//[****]\n2****3****5"));
+    	Assertions.assertEquals(6, StringCalculator.add("//[***]\n1***2***3"));
+    	Assertions.assertEquals(10, StringCalculator.add("//[****]\n2****3****5"));
     }
     
     @Test
     public void add_MultipleDelimitersAreSupplied_AllOfTheSuppliedDelimitersShouldBeConsidered() {
-    	final StringCalculator calculator = new StringCalculator();
-    	Assertions.assertEquals(6, calculator.add("//[*][%]\n1*2%3"));
+    	Assertions.assertEquals(6, StringCalculator.add("//[*][%]\n1*2%3"));
     }
     
     
     @Test
     public void add_MultipleDelimitersOfAnyLenghtAreSupplied_AllOfTheSuppliedDelimitersShouldBeConsidered() {
-    	final StringCalculator calculator = new StringCalculator();
-    	Assertions.assertEquals(6, calculator.add("//[**][%%]\n1**2%%3"));
+    	Assertions.assertEquals(6, StringCalculator.add("//[**][%%]\n1**2%%3"));
     }
     
     
