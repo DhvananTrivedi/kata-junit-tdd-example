@@ -51,6 +51,18 @@ public class StringCalculatorTest {
     }
     
     @Test
+    public void add_MultipleNegativeNumbers_ShouldThrowAndException() {
+    	
+    	final Throwable exception = Assertions.assertThrows(
+                IllegalArgumentException.class, () -> {
+                	StringCalculator.add("-1,2,-3");
+                }
+        );
+     
+    	Assertions.assertEquals("negatives not allowed - [-1, -3] is supplied", exception.getMessage());
+    }
+    
+    @Test
     public void add_NumberBiggerThan1000IsAdded_NumberBiggerThan1000ShouldBeIgnored() {
     	Assertions.assertEquals(3, StringCalculator.add("1,2,1003"));
     }
