@@ -1,8 +1,16 @@
 -------------------------------------------------------------------------------
 Test set: com.dhvanan.StringCalculatorTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.001 s <<< FAILURE! - in com.dhvanan.StringCalculatorTest
-add_ShouldWorkWith2SimpleNumbers  Time elapsed: 0.001 s  <<< FAILURE!
-org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
-	at com.dhvanan.StringCalculatorTest.add_ShouldWorkWith2SimpleNumbers(StringCalculatorTest.java:23)
+Tests run: 4, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.001 s <<< FAILURE! - in com.dhvanan.StringCalculatorTest
+add_ShouldWorkWhenWeAddingRandomAmountOfNumbers  Time elapsed: 0.001 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <6> but was: <0>
+	at com.dhvanan.StringCalculatorTest.add_ShouldWorkWhenWeAddingRandomAmountOfNumbers(StringCalculatorTest.java:27)
+
+add_ShouldWorkWhenNewLinesExistBetweenNumbers  Time elapsed: 0 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <6> but was: <0>
+	at com.dhvanan.StringCalculatorTest.add_ShouldWorkWhenNewLinesExistBetweenNumbers(StringCalculatorTest.java:35)
+
+add_ShouldWorkWith2SimpleNumbers  Time elapsed: 0 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <3> but was: <0>
+	at com.dhvanan.StringCalculatorTest.add_ShouldWorkWith2SimpleNumbers(StringCalculatorTest.java:21)
 

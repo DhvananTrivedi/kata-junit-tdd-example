@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.dhvanan.StringCalculatorTest" time="0.001" tests="2" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.dhvanan.StringCalculatorTest" time="0.001" tests="4" errors="0" skipped="0" failures="3">
   <properties>
     <property name="gopherProxySet" value="false"/>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
@@ -18,7 +18,7 @@
     <property name="user.country" value="GB"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib"/>
-    <property name="sun.java.command" value="/Volumes/Media/My Files/My Downloads/Spring projects/kata-junit-tdd-example/target/surefire/surefirebooter4837881912702567722.jar /Volumes/Media/My Files/My Downloads/Spring projects/kata-junit-tdd-example/target/surefire 2020-06-01T18-21-23_774-jvmRun1 surefire1443348472884966637tmp surefire_08282141143466799972tmp"/>
+    <property name="sun.java.command" value="/Volumes/Media/My Files/My Downloads/Spring projects/kata-junit-tdd-example/target/surefire/surefirebooter2919979056076187582.jar /Volumes/Media/My Files/My Downloads/Spring projects/kata-junit-tdd-example/target/surefire 2020-06-01T18-43-12_016-jvmRun1 surefire5721492659362797109tmp surefire_02505371044138113433tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="surefire.test.class.path" value="/Volumes/Media/My Files/My Downloads/Spring projects/kata-junit-tdd-example/target/test-classes:/Volumes/Media/My Files/My Downloads/Spring projects/kata-junit-tdd-example/target/classes:/Users/dhvanan/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.5.0-RC1/junit-jupiter-engine-5.5.0-RC1.jar:/Users/dhvanan/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/dhvanan/.m2/repository/org/junit/platform/junit-platform-engine/1.5.0-RC1/junit-platform-engine-1.5.0-RC1.jar:/Users/dhvanan/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.5.0-RC1/junit-jupiter-api-5.5.0-RC1.jar:/Users/dhvanan/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/dhvanan/.m2/repository/org/junit/platform/junit-platform-commons/1.5.0-RC1/junit-platform-commons-1.5.0-RC1.jar:/Users/dhvanan/.m2/repository/org/apache/logging/log4j/log4j-api/2.11.2/log4j-api-2.11.2.jar:/Users/dhvanan/.m2/repository/org/apache/logging/log4j/log4j-core/2.11.2/log4j-core-2.11.2.jar:/Users/dhvanan/.m2/repository/com/carmatechnologies/commons/commons-testing/1.0.1/commons-testing-1.0.1.jar:/Users/dhvanan/.m2/repository/com/carmatechnologies/commons/commons-testing-core/1.0.1/commons-testing-core-1.0.1.jar:/Users/dhvanan/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/dhvanan/.m2/repository/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7.jar:/Users/dhvanan/.m2/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar:/Users/dhvanan/.m2/repository/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar:/Users/dhvanan/.m2/repository/org/hamcrest/hamcrest-core/2.2/hamcrest-core-2.2.jar:/Users/dhvanan/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/dhvanan/.m2/repository/org/mockito/mockito-core/3.3.3/mockito-core-3.3.3.jar:/Users/dhvanan/.m2/repository/net/bytebuddy/byte-buddy/1.10.5/byte-buddy-1.10.5.jar:/Users/dhvanan/.m2/repository/net/bytebuddy/byte-buddy-agent/1.10.5/byte-buddy-agent-1.10.5.jar:/Users/dhvanan/.m2/repository/org/objenesis/objenesis/2.6/objenesis-2.6.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -32,7 +32,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/Volumes/Media/My Files/My Downloads/Spring projects/kata-junit-tdd-example/target/surefire/surefirebooter4837881912702567722.jar"/>
+    <property name="surefire.real.class.path" value="/Volumes/Media/My Files/My Downloads/Spring projects/kata-junit-tdd-example/target/surefire/surefirebooter2919979056076187582.jar"/>
     <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/classes"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
@@ -62,10 +62,20 @@
     <property name="java.class.version" value="52.0"/>
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
+  <testcase name="add_ShouldWorkWhenWeAddingRandomAmountOfNumbers" classname="com.dhvanan.StringCalculatorTest" time="0.001">
+    <failure message="expected: &lt;6&gt; but was: &lt;0&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <6> but was: <0>
+	at com.dhvanan.StringCalculatorTest.add_ShouldWorkWhenWeAddingRandomAmountOfNumbers(StringCalculatorTest.java:27)
+]]></failure>
+  </testcase>
+  <testcase name="add_ShouldWorkWhenNewLinesExistBetweenNumbers" classname="com.dhvanan.StringCalculatorTest" time="0">
+    <failure message="expected: &lt;6&gt; but was: &lt;0&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <6> but was: <0>
+	at com.dhvanan.StringCalculatorTest.add_ShouldWorkWhenNewLinesExistBetweenNumbers(StringCalculatorTest.java:35)
+]]></failure>
+  </testcase>
   <testcase name="add_ShouldWorkWithEmptyString" classname="com.dhvanan.StringCalculatorTest" time="0"/>
-  <testcase name="add_ShouldWorkWith2SimpleNumbers" classname="com.dhvanan.StringCalculatorTest" time="0.001">
-    <failure message="expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
-	at com.dhvanan.StringCalculatorTest.add_ShouldWorkWith2SimpleNumbers(StringCalculatorTest.java:23)
+  <testcase name="add_ShouldWorkWith2SimpleNumbers" classname="com.dhvanan.StringCalculatorTest" time="0">
+    <failure message="expected: &lt;3&gt; but was: &lt;0&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <3> but was: <0>
+	at com.dhvanan.StringCalculatorTest.add_ShouldWorkWith2SimpleNumbers(StringCalculatorTest.java:21)
 ]]></failure>
   </testcase>
 </testsuite>
